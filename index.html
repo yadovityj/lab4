@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Распознаватель</title>
+  </head>
+  <body>
+    <div id="content" role="main">
+      <div class="panel">
+        <h2 class="panel-head">Это бабочка?</h2>
+        <div class="panel-content">
+          <label for="image">
+            <form action="" class="image-select" data-droppable="">
+              <input id="image" type="file" data-droppable-input=""/>
+              <i class="fa fa-camera fa-2x image-select__icon"></i>
+              <div class="image-select__message"></div>
+              <div class="bg-image aspect-square" data-droppable-image=""></div>
+          </label>
+        </div>
+        <button class='button' type='submit' onchange="showPreview(event)">Распознать</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
